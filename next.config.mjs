@@ -14,7 +14,7 @@ const nextConfig = {
     ignoreBuildErrors: true,
   },
   output: 'export',
-  basePath: '/your-repo-name',
+  basePath: '/medical-pump-tech',
   images: {
     unoptimized: true,
   },
