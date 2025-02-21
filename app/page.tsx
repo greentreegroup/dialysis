@@ -15,6 +15,12 @@ export default function Home() {
             <span className="text-sm text-white">EN</span>
           </div>
           <div className="flex gap-4">
+            <Link href="/products" className="flex items-center gap-1 text-sm text-white hover:text-secondary">
+              Products
+            </Link>
+            <Link href="/team" className="flex items-center gap-1 text-sm text-white hover:text-secondary">
+              Team
+            </Link>
             <Link href="tel:+86123456789" className="flex items-center gap-1 text-sm text-white">
               <Phone className="h-4 w-4" />
               +86 123 456 789
