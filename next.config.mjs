@@ -14,9 +14,9 @@ const nextConfig = {
     ignoreBuildErrors: true,
   },
   output: 'export',
-  basePath: '/dialysis',
   images: {
     unoptimized: true,
+    domains: ['magmeric.com'],
   },
   experimental: {
     webpackBuildWorker: true,
