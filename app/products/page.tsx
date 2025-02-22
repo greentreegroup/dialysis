@@ -54,42 +54,42 @@ export default function Products() {
               title: "MP-600 Series",
               description: "High-precision peristaltic pump with flow rates 0.1-600 ml/min",
               features: ["±1% precision", "Touch screen", "Multiple tube sizes"],
-              image: "/medical_image.jpg"
+              image: "/real_image1.png"
             },
             {
               title: "MP-1000 Series",
               description: "Industrial-grade pump for high-volume applications",
               features: ["Flow rates up to 1L/min", "Industrial interface", "24/7 operation"],
-              image: "/medical_image2.jpg"
+              image: "/real_image2.png"
             },
             {
               title: "MP-Mini Series",
               description: "Compact solution for laboratory applications",
               features: ["Portable design", "USB interface", "Quiet operation"],
-              image: "/medical_image3.jpg"
+              image: "/real_image3.png"
             },
             {
               title: "MP-Dual Series",
               description: "Dual-channel peristaltic pump for parallel processing",
               features: ["Independent channel control", "Synchronized operation", "Digital calibration"],
-              image: "/medical_image2.jpg"
+              image: "/real_image4.png"
             },
             {
               title: "MP-Pro Series",
               description: "Professional-grade pump for research institutions",
               features: ["Advanced flow control", "Data logging", "Remote operation"],
-              image: "/medical_image3.jpg"
+              image: "/peristaltic_pump1.png"
             },
             {
               title: "MP-Smart Series",
               description: "Smart peristaltic pump with IoT capabilities",
               features: ["WiFi connectivity", "Mobile app control", "Cloud monitoring"],
-              image: "/medical_image.jpg"
+              image: "/peristaltic_pump2.png"
             }
           ].map((product, index) => (
             <Card key={index} className="overflow-hidden">
               <CardContent className="p-0">
-                <div className="relative h-48">
+                <div className="relative h-72">
                   <Image src={product.image} alt={product.title} fill className="object-cover" />
                 </div>
                 <div className="p-6">
@@ -125,24 +125,24 @@ export default function Products() {
                 title: "BI-100 Series",
                 description: "High-precision blood infusion pump for clinical applications",
                 features: ["±1% precision", "Touch screen", "Multiple infusion modes"],
-                image: "/blood_infusion.jpg"
+                image: "/blood_infusion1.png"
               },
               {
                 title: "BI-200 Series",
                 description: "Industrial-grade pump for high-volume blood transfusions",
                 features: ["Flow rates up to 1L/min", "Industrial interface", "24/7 operation"],
-                image: "/blood_infusion2.jpg"
+                image: "/blood_infusion2.png"
               },
               {
                 title: "BI-Mini Series",
                 description: "Compact solution for laboratory blood infusion",
                 features: ["Portable design", "USB interface", "Quiet operation"],
-                image: "/blood_infusion3.jpg"
+                image: "/blood_infusion3.png"
               }
             ].map((product, index) => (
               <Card key={index} className="overflow-hidden">
                 <CardContent className="p-0">
-                  <div className="relative h-48">
+                  <div className="relative h-72">
                     <Image
                       src={product.image}
                       alt={product.title}
