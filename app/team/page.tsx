@@ -7,7 +7,7 @@ export default function Team() {
     <div className="min-h-screen bg-white">
       {/* Header - Same as main page for consistency */}
       <header className="bg-primary">
-        <div className="container mx-auto px-4 py-3 flex justify-between items-center">
+        <div className="container mx-auto px-4 py-5 flex justify-between items-center">
           <Link href="/" className="text-white text-lg font-bold">
             Medical Pump Tech
           </Link>
@@ -35,10 +35,10 @@ export default function Team() {
       </header>
 
       {/* Team Hero */}
-      <section className="bg-gradient-to-r from-primary to-secondary text-white py-12 mt-12">
+      <section className="bg-gradient-to-r from-primary to-secondary text-white py-12">
         <div className="container mx-auto px-4">
           <h1 className="text-4xl font-bold mb-4">Our Team</h1>
-          <p className="text-lg opacity-90">Meet the experts behind our innovative pump technology</p>
+          <p className="text-lg opacity-90">Meet the experts behind our innovative pump technology.</p>
         </div>
       </section>
 
@@ -49,13 +49,13 @@ export default function Team() {
             {[
               {
                 name: "Andrew Isaac Rosenthal",
-                role: "Chief Technology Officer",
+                role: "Director",
                 bio: "Leading our technical innovation with over 15 years of experience in medical device engineering.",
                 image: "/AIR.png"
               },
               {
                 name: "Bo Shi",
-                role: "Lead Engineer",
+                role: "Director",
                 bio: "Specializing in precision fluid dynamics and pump system optimization.",
                 image: "/BOS.jpg"
               }

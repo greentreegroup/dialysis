@@ -9,7 +9,7 @@ export default function Products() {
     <div className="min-h-screen bg-white">
       {/* Header - Same as main page for consistency */}
       <header className="bg-primary">
-        <div className="container mx-auto px-4 py-3 flex justify-between items-center">
+        <div className="container mx-auto px-4 py-5 flex justify-between items-center">
           <Link href="/" className="text-white text-lg font-bold">
             Medical Pump Tech
           </Link>

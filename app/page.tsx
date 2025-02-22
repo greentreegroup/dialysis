@@ -9,7 +9,7 @@ export default function Home() {
     <div className="min-h-screen bg-white">
       {/* Header */}
       <header className="bg-primary">
-        <div className="container mx-auto px-4 py-3 flex justify-between items-center">
+        <div className="container mx-auto px-4 py-5 flex justify-between items-center">
           <div className="flex items-center gap-2">
             <Globe className="h-4 w-4 text-white" />
             <span className="text-sm text-white">EN</span>
@@ -44,16 +44,19 @@ export default function Home() {
           <div className="space-y-6">
               <h1 className="text-4xl md:text-5xl font-bold">Advanced Peristaltic Pump Technology</h1>
               <p className="text-lg opacity-90">
-                Leading manufacturer of high-precision dialysis and peristaltic pumps. ISO certified, FDA compliant,
-                trusted worldwide.
+                Leading manufacturer of high-precision dialysis and peristaltic pumps. ISO certified and trusted worldwide.
               </p>
               <div className="flex gap-4">
-                <Button size="lg" className="bg-secondary text-secondary-foreground hover:bg-secondary/90">
-                  Request Quote
-                </Button>
-                <Button size="lg" className="bg-secondary text-secondary-foreground hover:bg-secondary/90">
-                  Learn More
-                </Button>
+                <Link href="/products">
+                  <Button size="lg" className="bg-secondary text-secondary-foreground hover:bg-secondary/90">
+                    View Products
+                  </Button>
+                </Link>
+                <Link href="/team">
+                  <Button size="lg" className="bg-secondary text-secondary-foreground hover:bg-secondary/90">
+                    About Us
+                  </Button>
+                </Link>
               </div>
             </div>
             {/* Right Side Content */}
@@ -177,25 +180,19 @@ export default function Home() {
               <ul className="space-y-2">
                 <li>ISO 13485:2016</li>
                 <li>CE Marking</li>
-                <li>FDA Registered</li>
               </ul>
             </div>
             <div>
               <h3 className="text-xl font-bold mb-4">Quick Links</h3>
               <ul className="space-y-2">
                 <li>
-                  <Link href="#" className="hover:text-secondary">
+                  <Link href="/products" className="hover:text-secondary">
                     Products
                   </Link>
                 </li>
                 <li>
-                  <Link href="#" className="hover:text-secondary">
-                    About Us
-                  </Link>
-                </li>
-                <li>
-                  <Link href="#" className="hover:text-secondary">
-                    Contact
+                  <Link href="/team" className="hover:text-secondary">
+                    About
                   </Link>
                 </li>
               </ul>
