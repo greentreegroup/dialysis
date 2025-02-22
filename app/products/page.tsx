@@ -17,6 +17,10 @@ export default function Products() {
             <Link href="/products" className="flex items-center gap-1 text-sm text-secondary">
               Products
             </Link>
+            <div className="absolute hidden group-hover:block bg-white text-black rounded-md w-40 mt-2">
+              <Link href="/products#pumps" className="block px-4 py-2 hover:bg-gray-200">Peristalic Pumps</Link>
+              <Link href="/products#blood-infusion" className="block px-4 py-2 hover:bg-gray-200">Blood Infusion</Link>
+            </div>
             <Link href="/team" className="flex items-center gap-1 text-sm text-white hover:text-secondary">
               Team
             </Link>
@@ -36,50 +40,104 @@ export default function Products() {
       <section className="bg-gradient-to-r from-primary to-secondary text-white py-12">
         <div className="container mx-auto px-4">
           <h1 className="text-4xl font-bold mb-4">Our Products</h1>
-          <p className="text-lg opacity-90">Discover our range of high-precision peristaltic pumps</p>
+          <p className="text-lg opacity-90">We provide cutting edge solutions for both peristalic pumping and blood infusion technology.</p>
         </div>
       </section>
 
-      {/* Products Grid */}
-      <section className="py-16">
+      {/* Peristaltic Pumps Section */}
+      <section id="pumps" className="py-16">
         <div className="container mx-auto px-4">
+          <h2 className="text-3xl font-bold mb-8 text-center">Peristaltic Pumps</h2>
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          {[
+            {
+              title: "MP-600 Series",
+              description: "High-precision peristaltic pump with flow rates 0.1-600 ml/min",
+              features: ["±1% precision", "Touch screen", "Multiple tube sizes"],
+              image: "/medical_image.jpg"
+            },
+            {
+              title: "MP-1000 Series",
+              description: "Industrial-grade pump for high-volume applications",
+              features: ["Flow rates up to 1L/min", "Industrial interface", "24/7 operation"],
+              image: "/medical_image2.jpg"
+            },
+            {
+              title: "MP-Mini Series",
+              description: "Compact solution for laboratory applications",
+              features: ["Portable design", "USB interface", "Quiet operation"],
+              image: "/medical_image3.jpg"
+            },
+            {
+              title: "MP-Dual Series",
+              description: "Dual-channel peristaltic pump for parallel processing",
+              features: ["Independent channel control", "Synchronized operation", "Digital calibration"],
+              image: "/medical_image2.jpg"
+            },
+            {
+              title: "MP-Pro Series",
+              description: "Professional-grade pump for research institutions",
+              features: ["Advanced flow control", "Data logging", "Remote operation"],
+              image: "/medical_image3.jpg"
+            },
+            {
+              title: "MP-Smart Series",
+              description: "Smart peristaltic pump with IoT capabilities",
+              features: ["WiFi connectivity", "Mobile app control", "Cloud monitoring"],
+              image: "/medical_image.jpg"
+            }
+          ].map((product, index) => (
+            <Card key={index} className="overflow-hidden">
+              <CardContent className="p-0">
+                <div className="relative h-48">
+                  <Image src={product.image} alt={product.title} fill className="object-cover" />
+                </div>
+                <div className="p-6">
+                  <h3 className="text-xl font-semibold mb-2">{product.title}</h3>
+                  <p className="text-gray-600 mb-4">{product.description}</p>
+                  <ul className="space-y-2 mb-4">
+                    {product.features.map((feature, idx) => (
+                      <li key={idx} className="flex items-center gap-2 text-sm">
+                        <ChevronRight className="h-4 w-4 text-primary" />
+                        {feature}
+                      </li>
+                    ))}
+                  </ul>
+                  <Button className="w-full bg-primary text-white hover:bg-primary/90">
+                    Learn More
+                  </Button>
+                </div>
+              </CardContent>
+            </Card>
+          ))}
+        </div>
+      </div>
+    </section>
+
+
+      {/* Blood Infusion Section */}
+      <section id="blood-infusion" className="py-16 bg-gray-50">
+        <div className="container mx-auto px-4">
+          <h2 className="text-3xl font-bold mb-8 text-center">Blood Infusion Pumps</h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {[
               {
-                title: "MP-600 Series",
-                description: "High-precision peristaltic pump with flow rates 0.1-600 ml/min",
-                features: ["±1% precision", "Touch screen", "Multiple tube sizes"],
-                image: "/placeholder.svg?height=300&width=300"
+                title: "BI-100 Series",
+                description: "High-precision blood infusion pump for clinical applications",
+                features: ["±1% precision", "Touch screen", "Multiple infusion modes"],
+                image: "/blood_infusion.jpg"
               },
               {
-                title: "MP-1000 Series",
-                description: "Industrial-grade pump for high-volume applications",
+                title: "BI-200 Series",
+                description: "Industrial-grade pump for high-volume blood transfusions",
                 features: ["Flow rates up to 1L/min", "Industrial interface", "24/7 operation"],
-                image: "/placeholder.svg?height=300&width=300"
+                image: "/blood_infusion2.jpg"
               },
               {
-                title: "MP-Mini Series",
-                description: "Compact solution for laboratory applications",
+                title: "BI-Mini Series",
+                description: "Compact solution for laboratory blood infusion",
                 features: ["Portable design", "USB interface", "Quiet operation"],
-                image: "/placeholder.svg?height=300&width=300"
-              },
-              {
-                title: "MP-Dual Series",
-                description: "Dual-channel peristaltic pump for parallel processing",
-                features: ["Independent channel control", "Synchronized operation", "Digital calibration"],
-                image: "/placeholder.svg?height=300&width=300"
-              },
-              {
-                title: "MP-Pro Series",
-                description: "Professional-grade pump for research institutions",
-                features: ["Advanced flow control", "Data logging", "Remote operation"],
-                image: "/placeholder.svg?height=300&width=300"
-              },
-              {
-                title: "MP-Smart Series",
-                description: "Smart peristaltic pump with IoT capabilities",
-                features: ["WiFi connectivity", "Mobile app control", "Cloud monitoring"],
-                image: "/placeholder.svg?height=300&width=300"
+                image: "/blood_infusion3.jpg"
               }
             ].map((product, index) => (
               <Card key={index} className="overflow-hidden">

@@ -15,6 +15,10 @@ export default function Team() {
             <Link href="/products" className="flex items-center gap-1 text-sm text-white hover:text-secondary">
               Products
             </Link>
+            <div className="absolute hidden group-hover:block bg-white text-black rounded-md w-40 mt-2">
+              <Link href="/products#pumps" className="block px-4 py-2 hover:bg-gray-200">Peristalic Pumps</Link>
+              <Link href="/products#blood-infusion" className="block px-4 py-2 hover:bg-gray-200">Blood Infusion</Link>
+            </div>
             <Link href="/team" className="flex items-center gap-1 text-sm text-secondary">
               Team
             </Link>
@@ -47,13 +51,13 @@ export default function Team() {
                 name: "Andrew Isaac Rosenthal",
                 role: "Chief Technology Officer",
                 bio: "Leading our technical innovation with over 15 years of experience in medical device engineering.",
-                image: "/placeholder.svg?height=400&width=400"
+                image: "/CTO.jpg"
               },
               {
                 name: "Bo Shi",
                 role: "Lead Engineer",
                 bio: "Specializing in precision fluid dynamics and pump system optimization.",
-                image: "/placeholder.svg?height=400&width=400"
+                image: "/LE_Image.jpg"
               }
             ].map((member, index) => (
               <div key={index} className="bg-white rounded-lg shadow-lg overflow-hidden">
@@ -62,7 +66,7 @@ export default function Team() {
                     src={member.image}
                     alt={member.name}
                     fill
-                    className="object-cover"
+                    className="object-cover object-top"
                   />
                 </div>
                 <div className="p-6">

@@ -18,6 +18,10 @@ export default function Home() {
             <Link href="/products" className="flex items-center gap-1 text-sm text-white hover:text-secondary">
               Products
             </Link>
+            <div className="absolute hidden group-hover:block bg-white text-black rounded-md w-40 mt-2">
+              <Link href="/products#pumps" className="block px-4 py-2 hover:bg-gray-200">Peristalic Pumps</Link>
+              <Link href="/products#blood-infusion" className="block px-4 py-2 hover:bg-gray-200">Blood Infusion</Link>
+            </div>
             <Link href="/team" className="flex items-center gap-1 text-sm text-white hover:text-secondary">
               Team
             </Link>
@@ -34,10 +38,10 @@ export default function Home() {
       </header>
 
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-r from-primary to-secondary text-white">
-        <div className="container mx-auto px-4 py-16 md:py-24">
-          <div className="grid md:grid-cols-2 gap-8 items-center">
-            <div className="space-y-6">
+      <section className="bg-gradient-to-r from-primary to-secondary text-white">
+        <div className="container mx-auto px-4 py-16 md:py-24 grid md:grid-cols-2 gap-8 items-center">
+          {/* Left Side Content */}
+          <div className="space-y-6">
               <h1 className="text-4xl md:text-5xl font-bold">Advanced Peristaltic Pump Technology</h1>
               <p className="text-lg opacity-90">
                 Leading manufacturer of high-precision dialysis and peristaltic pumps. ISO certified, FDA compliant,
@@ -47,22 +51,22 @@ export default function Home() {
                 <Button size="lg" className="bg-secondary text-secondary-foreground hover:bg-secondary/90">
                   Request Quote
                 </Button>
-                <Button size="lg" variant="outline" className="text-white border-white hover:bg-white/10">
+                <Button size="lg" className="bg-secondary text-secondary-foreground hover:bg-secondary/90">
                   Learn More
                 </Button>
               </div>
             </div>
-            <div className="relative h-[300px] md:h-[400px]">
+            {/* Right Side Content */}
+            <div className="relative w-full h-[400px]">
               <Image
-                src="/placeholder.svg?height=400&width=600"
-                alt="Advanced Peristaltic Pump"
+                src="/lab_image.jpg"
+                alt="Lab Image"
                 fill
-                className="object-contain"
+                className="object-cover md:object-right opacity-90 rounded-lg"
                 priority
               />
             </div>
           </div>
-        </div>
       </section>
 
       {/* Features Section */}
@@ -105,7 +109,7 @@ export default function Home() {
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div className="relative h-[400px]">
               <Image
-                src="/placeholder.svg?height=400&width=600"
+                src="/pump_1.jpeg"
                 alt="Peristaltic Pump Details"
                 fill
                 className="object-contain"
@@ -144,7 +148,7 @@ export default function Home() {
             <Button size="lg" className="bg-secondary text-secondary-foreground hover:bg-secondary/90">
               Contact Sales
             </Button>
-            <Button size="lg" variant="outline" className="text-white border-white hover:bg-white/10">
+            <Button size="lg" className="bg-secondary text-secondary-foreground hover:bg-secondary/90">
               Download Catalog
             </Button>
           </div>
