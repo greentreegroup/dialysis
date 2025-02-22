@@ -92,3 +92,8 @@ body {
     @apply bg-background text-foreground;
   }
 }
+
+.scale-image {
+  transform: scale(1);
+  transform-origin: center; /* Ensures the image scales from the center */
+}
