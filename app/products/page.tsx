@@ -11,7 +11,7 @@ export default function Products() {
       <header className="bg-primary">
         <div className="container mx-auto px-4 py-5 flex justify-between items-center">
           <Link href="/" className="text-white text-lg font-bold">
-            Medical Pump Tech
+            Magmeric
           </Link>
           <div className="flex gap-4">
             <Link href="/products" className="flex items-center gap-1 text-sm text-secondary">

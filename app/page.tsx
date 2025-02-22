@@ -25,11 +25,11 @@ export default function Home() {
             <Link href="/team" className="flex items-center gap-1 text-sm text-white hover:text-secondary">
               Team
             </Link>
-            <Link href="tel:+86123456789" className="flex items-center gap-1 text-sm text-white">
+            <Link href="tel:+12243822260" className="flex items-center gap-1 text-sm text-white">
               <Phone className="h-4 w-4" />
               224-382-2260
             </Link>
-            <Link href="mailto:info@company.com" className="flex items-center gap-1 text-sm text-white">
+            <Link href="mailto:sales@magmeric.com" className="flex items-center gap-1 text-sm text-white">
               <Mail className="h-4 w-4" />
               sales@magmeric.com
             </Link>
@@ -42,7 +42,7 @@ export default function Home() {
         <div className="container mx-auto px-4 py-16 md:py-24 grid md:grid-cols-2 gap-8 items-center">
           {/* Left Side Content */}
           <div className="space-y-6">
-              <h1 className="text-4xl md:text-5xl font-bold">Advanced Peristaltic Pump Technology</h1>
+              <h1 className="text-4xl md:text-5xl font-bold">Magnermic: Advanced Peristaltic Pump Technology</h1>
               <p className="text-lg opacity-90">
                 Leading manufacturer of high-precision dialysis and peristaltic pumps. ISO certified and trusted worldwide.
               </p>
@@ -167,11 +167,15 @@ export default function Home() {
               <div className="space-y-2">
                 <p className="flex items-center gap-2">
                   <Phone className="h-4 w-4" />
-                  +86 123 456 789
+                  <Link href="tel:+12243822260" className="text-white">
+                    224-382-2260
+                  </Link>
                 </p>
                 <p className="flex items-center gap-2">
                   <Mail className="h-4 w-4" />
-                  info@company.com
+                  <Link href="mailto:sales@magmeric.com" className="text-white">
+                    sales@magmeric.com
+                  </Link>
                 </p>
               </div>
             </div>
