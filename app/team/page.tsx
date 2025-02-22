@@ -24,18 +24,18 @@ export default function Team() {
             </Link>
             <Link href="tel:+86123456789" className="flex items-center gap-1 text-sm text-white">
               <Phone className="h-4 w-4" />
-              +86 123 456 789
+              224-382-2260
             </Link>
             <Link href="mailto:info@company.com" className="flex items-center gap-1 text-sm text-white">
               <Mail className="h-4 w-4" />
-              info@company.com
+              sales@magmeric.com
             </Link>
           </div>
         </div>
       </header>
 
       {/* Team Hero */}
-      <section className="bg-gradient-to-r from-primary to-secondary text-white py-12">
+      <section className="bg-gradient-to-r from-primary to-secondary text-white py-12 mt-12">
         <div className="container mx-auto px-4">
           <h1 className="text-4xl font-bold mb-4">Our Team</h1>
           <p className="text-lg opacity-90">Meet the experts behind our innovative pump technology</p>
@@ -43,7 +43,7 @@ export default function Team() {
       </section>
 
       {/* Team Grid */}
-      <section className="py-16">
+      <section className="p-6 text-center">
         <div className="container mx-auto px-4">
           <div className="grid md:grid-cols-2 gap-8">
             {[
@@ -51,22 +51,22 @@ export default function Team() {
                 name: "Andrew Isaac Rosenthal",
                 role: "Chief Technology Officer",
                 bio: "Leading our technical innovation with over 15 years of experience in medical device engineering.",
-                image: "/CTO.jpg"
+                image: "/AIR.png"
               },
               {
                 name: "Bo Shi",
                 role: "Lead Engineer",
                 bio: "Specializing in precision fluid dynamics and pump system optimization.",
-                image: "/LE_Image.jpg"
+                image: "/BOS.jpg"
               }
             ].map((member, index) => (
               <div key={index} className="bg-white rounded-lg shadow-lg overflow-hidden">
-                <div className="relative h-64">
+                <div className="relative w-full h-64">
                   <Image
                     src={member.image}
                     alt={member.name}
                     fill
-                    className="object-cover object-top"
+                    className="object-contain object-center"
                   />
                 </div>
                 <div className="p-6">

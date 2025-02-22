@@ -27,11 +27,11 @@ export default function Home() {
             </Link>
             <Link href="tel:+86123456789" className="flex items-center gap-1 text-sm text-white">
               <Phone className="h-4 w-4" />
-              +86 123 456 789
+              224-382-2260
             </Link>
             <Link href="mailto:info@company.com" className="flex items-center gap-1 text-sm text-white">
               <Mail className="h-4 w-4" />
-              info@company.com
+              sales@magmeric.com
             </Link>
           </div>
         </div>
