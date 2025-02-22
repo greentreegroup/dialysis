@@ -24,11 +24,11 @@ export default function Products() {
             <Link href="/team" className="flex items-center gap-1 text-sm text-white hover:text-secondary">
               Team
             </Link>
-            <Link href="tel:+86123456789" className="flex items-center gap-1 text-sm text-white">
+            <Link href="tel:+12243822260" className="flex items-center gap-1 text-sm text-white">
               <Phone className="h-4 w-4" />
               224-382-2260
             </Link>
-            <Link href="mailto:info@company.com" className="flex items-center gap-1 text-sm text-white">
+            <Link href="mailto:sales@magmeric.com" className="flex items-center gap-1 text-sm text-white">
               <Mail className="h-4 w-4" />
               sales@magmeric.com
             </Link>
@@ -54,7 +54,7 @@ export default function Products() {
               title: "MP-600 Series",
               description: "High-precision peristaltic pump with flow rates 0.1-600 ml/min",
               features: ["±1% precision", "Touch screen", "Multiple tube sizes"],
-              image: "/peristaltic_pump1.png",
+              image: "/pump_1.jpeg",
               className: "scale-image"
             },
             {
@@ -95,7 +95,7 @@ export default function Products() {
           ].map((product, index) => (
             <Card key={index} className="overflow-hidden">
               <CardContent className="p-0">
-              <div className="relative h-48">
+              <div id="mp-600-series" className="relative h-48">
                 <Image src={product.image} alt={product.title} fill className={`object-contain ${product.className || ''}`} />
               </div>
                 <div className="p-6">
@@ -181,9 +181,18 @@ export default function Products() {
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-3xl font-bold mb-4">Need Help Choosing?</h2>
           <p className="text-lg mb-8">Our experts are here to help you find the perfect solution</p>
-          <Button size="lg" className="bg-secondary text-white hover:bg-secondary/90">
-            Contact Sales
-          </Button>
+          <div className="flex justify-center gap-4">
+            <Link href="tel:+12243822260">
+              <Button size="lg" className="bg-secondary text-white hover:bg-secondary/90">
+                Phone Call
+              </Button>
+            </Link>
+            <Link href="mailto:sales@magmeric.com">
+              <Button size="lg" className="bg-secondary text-white hover:bg-secondary/90">
+                Email
+              </Button>
+            </Link>
+          </div>
         </div>
       </section>
     </div>

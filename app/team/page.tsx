@@ -22,11 +22,11 @@ export default function Team() {
             <Link href="/team" className="flex items-center gap-1 text-sm text-secondary">
               Team
             </Link>
-            <Link href="tel:+86123456789" className="flex items-center gap-1 text-sm text-white">
+            <Link href="tel:+12243822260" className="flex items-center gap-1 text-sm text-white">
               <Phone className="h-4 w-4" />
               224-382-2260
             </Link>
-            <Link href="mailto:info@company.com" className="flex items-center gap-1 text-sm text-white">
+            <Link href="mailto:sales@magmeric.com" className="flex items-center gap-1 text-sm text-white">
               <Mail className="h-4 w-4" />
               sales@magmeric.com
             </Link>

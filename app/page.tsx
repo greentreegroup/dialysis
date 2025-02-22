@@ -118,9 +118,9 @@ export default function Home() {
                 className="object-contain"
               />
             </div>
-            <div className="space-y-6">
+            <div  >
               <h2 className="text-3xl font-bold">MP-600 Series Peristaltic Pump</h2>
-              <ul className="space-y-4">
+              <ul className="space-y-4 mb-6">
                 {[
                   "Flow rate: 0.1-600 ml/min",
                   "Precision: ±1%",
@@ -134,9 +134,11 @@ export default function Home() {
                   </li>
                 ))}
               </ul>
-              <Button size="lg" className="bg-primary text-primary-foreground hover:bg-primary/90">
-                Download Specifications
-              </Button>
+              <Link href="/products#mp-600-series">
+                <Button size="lg" className="bg-primary text-primary-foreground hover:bg-primary/90">
+                  View Product
+                </Button>
+              </Link>
             </div>
           </div>
         </div>
@@ -148,12 +150,16 @@ export default function Home() {
           <h2 className="text-3xl font-bold mb-6">Ready to Upgrade Your Medical Equipment?</h2>
           <p className="text-lg mb-8 opacity-90">Contact us today for customized solutions and competitive pricing</p>
           <div className="flex justify-center gap-4">
-            <Button size="lg" className="bg-secondary text-secondary-foreground hover:bg-secondary/90">
-              Contact Sales
-            </Button>
-            <Button size="lg" className="bg-secondary text-secondary-foreground hover:bg-secondary/90">
-              Download Catalog
-            </Button>
+            <Link href="tel:+12243822260">
+              <Button size="lg" className="bg-secondary text-secondary-foreground hover:bg-secondary/90">
+                Phone Call
+              </Button>
+            </Link>
+            <Link href="mailto:sales@magmeric.com">
+              <Button size="lg" className="bg-secondary text-secondary-foreground hover:bg-secondary/90">
+                Email
+              </Button>
+            </Link>
           </div>
         </div>
       </section>
